@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wajida Bano - Professional Portfolio">
+    <title>Wajida Bano - Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #fff;
+            background: #0f0f0f;
+            background-image: url('background.jpg'); /* Replace with your actual background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 60px 0;
+            border-bottom: 1px solid #444;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .section {
+            padding: 70px 0;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 15px;
+            margin: 20px auto;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            color: #ff758c;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            color: #ff758c;
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+        form button {
+            background: #ff758c;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        form button:hover {
+            background: #ff7eb3;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #ff7eb3;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Wajida Bano</h1>
+            <p>BS Software Engineering Student | SZABIST</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Wajida Bano, a passionate student pursuing a Bachelor of Science in Software Engineering at SZABIST. I specialize in designing and building interactive, user-friendly web applications. I am enthusiastic about learning new technologies and continuously improving my skills to deliver impactful solutions.</p>
+            
+            <h3>Education</h3>
+            <p>I completed my schooling from Public School Jutial, Gilgit, and later pursued my college education at IMCG F-7/2 in Islamabad.</p>
+            
+            <h3>Languages</h3>
+            <p>I am fluent in multiple languages, including Shina, Burushaski, English, and Urdu, allowing me to communicate effectively with diverse groups of people.</p>
+
+            <h3>Hobbies</h3>
+            
+                <li><strong>Photography:</strong> </li>
+                <li><strong>Traveling:</strong> </li>
+                <li><strong>Gaming:</strong> </li>
+                <li><strong>Writing:</strong> </li>
+                <li><strong>Volunteering:</strong></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>MarsData Navigator</h3>
+                    <p>A project focused on exploring and visualizing data about Mars. This project highlights my ability to work with data visualization and web technologies.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Restaurant Management System</h3>
+                    <p>An application designed to manage restaurant operations, including reservations, orders, and inventory. This project showcases my back-end development skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out via the form below or directly at:</p>
+            <p><strong>Phone:</strong> +123-456-7890</p>
+            <p><strong>Email:</strong> wajida@example.com</p>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Wajida Bano. All Rights Reserved. | <a href="#">LinkedIn</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
